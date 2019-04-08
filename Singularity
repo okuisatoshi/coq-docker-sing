@@ -1,9 +1,9 @@
 Bootstrap:docker
-From: bitnami/minideb:stretch
+From: ubuntu:18.04
 
 %post
 apt-get update && \
-apt-get install -y coq libssreflect-coq proofgeneral emacs24-nox git curl wget emacs-mozc &&\
+apt-get install -y coq libssreflect-coq proofgeneral emacs25-nox git curl wget emacs-mozc &&\
 apt-get clean
 
 %files
